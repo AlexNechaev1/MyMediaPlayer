@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="13dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cell_artist_album_img"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center"
+            android:layout_weight="2"
+
+            android:src="@mipmap/ic_launcher" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cell_artist_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Artist Name:Artist Name"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cell_artist_song_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Artist Song:Artist Song"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cell_like_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_weight="1"
+            android:button="@drawable/cb_heath"
+            android:buttonTint="@color/red" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
